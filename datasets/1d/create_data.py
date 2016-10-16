@@ -1,5 +1,5 @@
 import numpy as np
-
+np.random.seed(1337)
 def gen_a(l, a=1, b=5):
 	
 	inp = np.linspace(a,b,l)
