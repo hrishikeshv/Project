@@ -1,0 +1,576 @@
+Namespace(activ='sigmoid', deg=10, epoch=500, f=1, hlayers=1, mode='normal', nodes=10)
+('Train score:', 13.933887741088867)
+('Test score:', 8.8681586485762356)
+
+Namespace(activ='relu', deg=10, epoch=500, f=1, hlayers=1, mode='normal', nodes=10)
+('Train score:', 8.5310870895385751)
+('Test score:', 17.81156436950252)
+
+Namespace(activ='linear', deg=10, epoch=500, f=1, hlayers=1, mode='normal', nodes=10)
+('Train score:', 9.1355144500732415)
+('Test score:', 18.574447751142486)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=1, hlayers=2, mode='normal', nodes=10)
+('Train score:', 11.21972705078125)
+('Test score:', 6.7658958526483719)
+
+Namespace(activ='relu', deg=10, epoch=500, f=1, hlayers=2, mode='normal', nodes=10)
+('Train score:', 7.0216678924560547)
+('Test score:', 14.404247699433576)
+
+Namespace(activ='linear', deg=10, epoch=500, f=1, hlayers=2, mode='normal', nodes=10)
+('Train score:', 7.5768641967773434)
+('Test score:', 15.888451682311995)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=1, hlayers=3, mode='normal', nodes=10)
+('Train score:', 11.534724151611329)
+('Test score:', 6.8167808010489326)
+
+Namespace(activ='relu', deg=10, epoch=500, f=1, hlayers=3, mode='normal', nodes=10)
+('Train score:', 6.971843338012695)
+('Test score:', 13.889856087438497)
+
+Namespace(activ='linear', deg=10, epoch=500, f=1, hlayers=3, mode='normal', nodes=10)
+('Train score:', 6.9132237548828126)
+('Test score:', 13.680989366074376)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 9.7450743255615233)
+('Test score:', 7.9374765290298441)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 12.230467620849609)
+('Test score:', 6.783268332448964)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 9.5226642608642571)
+('Test score:', 7.3186084148447446)
+
+Namespace(activ='relu', deg=5, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 10.897240234374999)
+('Test score:', 18.32285249755212)
+
+Namespace(activ='relu', deg=10, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 30.417823852539062)
+('Test score:', 11.919503482035848)
+
+Namespace(activ='relu', deg=15, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 10.94746125793457)
+('Test score:', 18.311079623357479)
+
+Namespace(activ='linear', deg=5, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 10.707030426025391)
+('Test score:', 20.170879475798721)
+
+Namespace(activ='linear', deg=10, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 11.022703453063965)
+('Test score:', 19.591028341885199)
+
+Namespace(activ='linear', deg=15, epoch=500, f=1, hlayers=1, mode='poly', nodes=10)
+('Train score:', 12.558418106079101)
+('Test score:', 20.909495970721085)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 10.226796630859376)
+('Test score:', 7.5006326589047472)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 11.771370361328126)
+('Test score:', 9.1660973945972479)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 11.287854278564453)
+('Test score:', 6.8117299037100283)
+
+Namespace(activ='relu', deg=5, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 10.850447959899903)
+('Test score:', 20.853498418142461)
+
+Namespace(activ='relu', deg=10, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 9.376228744506836)
+('Test score:', 19.881473169334562)
+
+Namespace(activ='relu', deg=15, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 10.930652908325195)
+('Test score:', 18.930208261161514)
+
+Namespace(activ='linear', deg=5, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 10.990735763549806)
+('Test score:', 18.367975349104661)
+
+Namespace(activ='linear', deg=10, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 11.389084655761719)
+('Test score:', 16.522366583266269)
+
+Namespace(activ='linear', deg=15, epoch=500, f=1, hlayers=2, mode='poly', nodes=10)
+('Train score:', 11.088643051147461)
+('Test score:', 19.748505995913565)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 11.176395141601562)
+('Test score:', 6.7670208166758909)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 18.485209564208983)
+('Test score:', 9.8560946241227843)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 10.472235610961913)
+('Test score:', 6.881271341750244)
+
+Namespace(activ='relu', deg=5, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 10.648860107421875)
+('Test score:', 21.967573785509529)
+
+Namespace(activ='relu', deg=10, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 21.772766220092773)
+('Test score:', 55.877298187554644)
+
+Namespace(activ='relu', deg=15, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 11.431857849121094)
+('Test score:', 20.920092305963312)
+
+Namespace(activ='linear', deg=5, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 10.55801023864746)
+('Test score:', 21.759856911628894)
+
+Namespace(activ='linear', deg=10, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 35.516172760009766)
+('Test score:', 88.456206943407182)
+
+Namespace(activ='linear', deg=15, epoch=500, f=1, hlayers=3, mode='poly', nodes=10)
+('Train score:', 11.072816696166992)
+('Test score:', 19.894036556541643)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=2, hlayers=1, mode='normal', nodes=10)
+('Train score:', 178.93914770507811)
+('Test score:', 251.07873632140078)
+
+Namespace(activ='relu', deg=10, epoch=500, f=2, hlayers=1, mode='normal', nodes=10)
+('Train score:', 1270.180439453125)
+('Test score:', 1324.2641721137857)
+
+Namespace(activ='linear', deg=10, epoch=500, f=2, hlayers=1, mode='normal', nodes=10)
+('Train score:', 1167.4300576171875)
+('Test score:', 1384.7691043576119)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=2, hlayers=2, mode='normal', nodes=10)
+('Train score:', 2935.6456914062501)
+('Test score:', 3197.9888550900037)
+
+Namespace(activ='relu', deg=10, epoch=500, f=2, hlayers=2, mode='normal', nodes=10)
+('Train score:', 1186.8702109374999)
+('Test score:', 1355.7769110271724)
+
+Namespace(activ='linear', deg=10, epoch=500, f=2, hlayers=2, mode='normal', nodes=10)
+('Train score:', 1164.8770761718749)
+('Test score:', 1465.6627497877462)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=2, hlayers=3, mode='normal', nodes=10)
+('Train score:', 4290.1490234374996)
+('Test score:', 4604.0848886446129)
+
+Namespace(activ='relu', deg=10, epoch=500, f=2, hlayers=3, mode='normal', nodes=10)
+('Train score:', 1169.4171962890625)
+('Test score:', 1586.5401015581185)
+
+Namespace(activ='linear', deg=10, epoch=500, f=2, hlayers=3, mode='normal', nodes=10)
+('Train score:', 1356.0332207031249)
+('Test score:', 1708.8185682211179)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 5527.5003515625003)
+('Test score:', 5881.7118378750465)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 2444.9596210937498)
+('Test score:', 2685.6796967495948)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 2875.6154882812498)
+('Test score:', 3135.4172699187593)
+
+Namespace(activ='relu', deg=5, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1218.090025390625)
+('Test score:', 1308.6062521054998)
+
+Namespace(activ='relu', deg=10, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1251.381994140625)
+('Test score:', 1410.6248959420566)
+
+Namespace(activ='relu', deg=15, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1238.4879472656251)
+('Test score:', 1317.9395825280506)
+
+Namespace(activ='linear', deg=5, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1251.9738925781251)
+('Test score:', 1357.8363150295208)
+
+Namespace(activ='linear', deg=10, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1284.1210888671876)
+('Test score:', 1311.1624166501958)
+
+Namespace(activ='linear', deg=15, epoch=500, f=2, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1269.0717294921874)
+('Test score:', 1331.5396825575519)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 6652.9269101562504)
+('Test score:', 7039.9710920948091)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 4512.1788437499999)
+('Test score:', 4833.7356611805208)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1559.4383037109376)
+('Test score:', 1754.568761428118)
+
+Namespace(activ='relu', deg=5, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1244.8397128906249)
+('Test score:', 1316.5182984980604)
+
+Namespace(activ='relu', deg=10, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1317.3146660156251)
+('Test score:', 1505.0677022277894)
+
+Namespace(activ='relu', deg=15, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1807.985595703125)
+('Test score:', 1516.1743201486847)
+
+Namespace(activ='linear', deg=5, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1239.5674863281249)
+('Test score:', 1332.326449667112)
+
+Namespace(activ='linear', deg=10, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1226.223609375)
+('Test score:', 1342.977161319995)
+
+Namespace(activ='linear', deg=15, epoch=500, f=2, hlayers=2, mode='poly', nodes=10)
+('Train score:', 1249.9024130859375)
+('Test score:', 1400.2759815950099)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 3319.1874218749999)
+('Test score:', 3597.181757461989)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 1312.500197265625)
+('Test score:', 1492.6442094006068)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 4285.6447929687502)
+('Test score:', 4599.4240067882292)
+
+Namespace(activ='relu', deg=5, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 1226.0925136718749)
+('Test score:', 1321.2403060897873)
+
+Namespace(activ='relu', deg=10, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 1656.8641005859374)
+('Test score:', 1762.7822961018069)
+
+Namespace(activ='relu', deg=15, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 1365.1103789062499)
+('Test score:', 1588.441885585918)
+
+Namespace(activ='linear', deg=5, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 1265.856474609375)
+('Test score:', 1299.4454824917339)
+
+Namespace(activ='linear', deg=10, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 7369.7784921875)
+('Test score:', 5044.0825760024618)
+
+Namespace(activ='linear', deg=15, epoch=500, f=2, hlayers=3, mode='poly', nodes=10)
+('Train score:', 2819.3383437500001)
+('Test score:', 3286.3243411854282)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=3, hlayers=1, mode='normal', nodes=10)
+('Train score:', 392.62257470703128)
+('Test score:', 205.76790552679097)
+
+Namespace(activ='relu', deg=10, epoch=500, f=3, hlayers=1, mode='normal', nodes=10)
+('Train score:', 66.19266809082032)
+('Test score:', 49.415104912811856)
+
+Namespace(activ='linear', deg=10, epoch=500, f=3, hlayers=1, mode='normal', nodes=10)
+('Train score:', 185.31801855468751)
+('Test score:', 224.8277511308778)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=3, hlayers=2, mode='normal', nodes=10)
+('Train score:', 397.14388232421874)
+('Test score:', 205.06895798017393)
+
+Namespace(activ='relu', deg=10, epoch=500, f=3, hlayers=2, mode='normal', nodes=10)
+('Train score:', 1336.521470703125)
+('Test score:', 611.3549406231574)
+
+Namespace(activ='linear', deg=10, epoch=500, f=3, hlayers=2, mode='normal', nodes=10)
+('Train score:', 162.01027850341796)
+('Test score:', 237.85812923503372)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=3, hlayers=3, mode='normal', nodes=10)
+('Train score:', 402.07863281250002)
+('Test score:', 204.42172339097507)
+
+Namespace(activ='relu', deg=10, epoch=500, f=3, hlayers=3, mode='normal', nodes=10)
+('Train score:', 72.927901000976561)
+('Test score:', 122.66320581975972)
+
+Namespace(activ='linear', deg=10, epoch=500, f=3, hlayers=3, mode='normal', nodes=10)
+('Train score:', 144.6890438232422)
+('Test score:', 85.06996409578143)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 402.505244140625)
+('Test score:', 204.37120361328124)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 612.76543212890624)
+('Test score:', 237.8018757370283)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 402.80626416015627)
+('Test score:', 204.33607799602004)
+
+Namespace(activ='relu', deg=5, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 239.50048681640624)
+('Test score:', 163.04277453152639)
+
+Namespace(activ='relu', deg=10, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 1378.6380556640624)
+('Test score:', 641.96573877874414)
+
+Namespace(activ='relu', deg=15, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 194.02456872558594)
+('Test score:', 301.06081381743809)
+
+Namespace(activ='linear', deg=5, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 191.14382922363282)
+('Test score:', 305.91428429945461)
+
+Namespace(activ='linear', deg=10, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 629.91320751953128)
+('Test score:', 1011.5433022553066)
+
+Namespace(activ='linear', deg=15, epoch=500, f=3, hlayers=1, mode='poly', nodes=10)
+('Train score:', 259.73255993652344)
+('Test score:', 447.4822737783756)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 407.14033935546877)
+('Test score:', 203.87589715921655)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 585.91472021484378)
+('Test score:', 229.43780126031839)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 398.03664062500002)
+('Test score:', 204.94311356454526)
+
+Namespace(activ='relu', deg=5, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 176.56448034667969)
+('Test score:', 220.48975298899524)
+
+Namespace(activ='relu', deg=10, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 668.57065820312505)
+('Test score:', 1231.4071609209168)
+
+Namespace(activ='relu', deg=15, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 834.79203125000004)
+('Test score:', 357.40489870467275)
+
+Namespace(activ='linear', deg=5, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 200.87960931396483)
+('Test score:', 182.80779655024691)
+
+Namespace(activ='linear', deg=10, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 4472.1039609375002)
+('Test score:', 5624.5819096403302)
+
+Namespace(activ='linear', deg=15, epoch=500, f=3, hlayers=2, mode='poly', nodes=10)
+('Train score:', 3286.5790039062499)
+('Test score:', 4090.8543982163915)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 394.56734204101565)
+('Test score:', 205.45449708182858)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 386.84976220703123)
+('Test score:', 206.81850171359079)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 402.53478027343749)
+('Test score:', 204.36773318884508)
+
+Namespace(activ='relu', deg=5, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 185.45827056884767)
+('Test score:', 266.00978033677586)
+
+Namespace(activ='relu', deg=10, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 4521.2123769531254)
+('Test score:', 63205.261703088152)
+
+Namespace(activ='relu', deg=15, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 208.10825927734376)
+('Test score:', 281.2409729003906)
+
+Namespace(activ='linear', deg=5, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 176.97982958984375)
+('Test score:', 240.74054473301149)
+
+Namespace(activ='linear', deg=10, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 835022.39300000004)
+('Test score:', 856243.27500000002)
+
+Namespace(activ='linear', deg=15, epoch=500, f=3, hlayers=3, mode='poly', nodes=10)
+('Train score:', 209.33519049072265)
+('Test score:', 111.90228782509858)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=4, hlayers=1, mode='normal', nodes=10)
+('Train score:', 64.935114898681647)
+('Test score:', 92.348806007235652)
+
+Namespace(activ='relu', deg=10, epoch=500, f=4, hlayers=1, mode='normal', nodes=10)
+('Train score:', 47.348029327392581)
+('Test score:', 87.228941375134042)
+
+Namespace(activ='linear', deg=10, epoch=500, f=4, hlayers=1, mode='normal', nodes=10)
+('Train score:', 73.007887115478511)
+('Test score:', 276.19378352944369)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=4, hlayers=2, mode='normal', nodes=10)
+('Train score:', 48.083144989013675)
+('Test score:', 71.272697336533497)
+
+Namespace(activ='relu', deg=10, epoch=500, f=4, hlayers=2, mode='normal', nodes=10)
+('Train score:', 43.375266113281249)
+('Test score:', 78.420505548614301)
+
+Namespace(activ='linear', deg=10, epoch=500, f=4, hlayers=2, mode='normal', nodes=10)
+('Train score:', 32.595548095703123)
+('Test score:', 87.080332089093773)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=4, hlayers=3, mode='normal', nodes=10)
+('Train score:', 73.804472351074224)
+('Test score:', 103.00699260188084)
+
+Namespace(activ='relu', deg=10, epoch=500, f=4, hlayers=3, mode='normal', nodes=10)
+('Train score:', 31.128348541259765)
+('Test score:', 78.012821795893657)
+
+Namespace(activ='linear', deg=10, epoch=500, f=4, hlayers=3, mode='normal', nodes=10)
+('Train score:', 33.377553710937498)
+('Test score:', 75.111345552930644)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 100.78096740722657)
+('Test score:', 123.20240661521363)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 130.19078002929689)
+('Test score:', 147.70522961585351)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 203.64480712890625)
+('Test score:', 212.36796888962292)
+
+Namespace(activ='relu', deg=5, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 76.178904571533209)
+('Test score:', 121.6732946657667)
+
+Namespace(activ='relu', deg=10, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 63.856596679687499)
+('Test score:', 100.15520397510404)
+
+Namespace(activ='relu', deg=15, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 79.983320617675787)
+('Test score:', 220.42230892804713)
+
+Namespace(activ='linear', deg=5, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 87.90144897460938)
+('Test score:', 125.87412902732301)
+
+Namespace(activ='linear', deg=10, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 77.704757080078124)
+('Test score:', 110.29969014685139)
+
+Namespace(activ='linear', deg=15, epoch=500, f=4, hlayers=1, mode='poly', nodes=10)
+('Train score:', 732.234990234375)
+('Test score:', 4191.7430906607433)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 92.061897888183594)
+('Test score:', 116.28607533024807)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 197.49227172851562)
+('Test score:', 206.84565296048433)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 121.486708984375)
+('Test score:', 140.31745102826287)
+
+Namespace(activ='relu', deg=5, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 75.614125976562505)
+('Test score:', 193.50300947201796)
+
+Namespace(activ='relu', deg=10, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 115.30684204101563)
+('Test score:', 230.67712262720843)
+
+Namespace(activ='relu', deg=15, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 856.8173876953125)
+('Test score:', 1013.5734260908139)
+
+Namespace(activ='linear', deg=5, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 74.634798889160152)
+('Test score:', 177.5400487363728)
+
+Namespace(activ='linear', deg=10, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 69.759020690917964)
+('Test score:', 147.19991447099673)
+
+Namespace(activ='linear', deg=15, epoch=500, f=4, hlayers=2, mode='poly', nodes=10)
+('Train score:', 13483.558125)
+('Test score:', 38378.608864379086)
+
+Namespace(activ='sigmoid', deg=5, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 66.794815368652337)
+('Test score:', 99.073661978727856)
+
+Namespace(activ='sigmoid', deg=10, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 98.137872619628908)
+('Test score:', 121.08193709180246)
+
+Namespace(activ='sigmoid', deg=15, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 187.05731323242188)
+('Test score:', 197.51332817825616)
+
+Namespace(activ='relu', deg=5, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 74.975299377441402)
+('Test score:', 191.44571910184973)
+
+Namespace(activ='relu', deg=10, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 8578.8109375000004)
+('Test score:', 191805981.1731388)
+
+Namespace(activ='relu', deg=15, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 68779.717499999999)
+('Test score:', 111284.16863255719)
+
+Namespace(activ='linear', deg=5, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 73.497493896484372)
+('Test score:', 176.61826369341682)
+
+Namespace(activ='linear', deg=10, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 8984.2653515625007)
+('Test score:', 30109.956897212011)
+
+Namespace(activ='linear', deg=15, epoch=500, f=4, hlayers=3, mode='poly', nodes=10)
+('Train score:', 75501.800625000003)
+('Test score:', 114432.58558006537)
+

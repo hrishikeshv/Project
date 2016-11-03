@@ -7,7 +7,7 @@ import sys
 import argparse
 import numpy as np
 sys.path.insert(0, '../datasets/1d/')
-np.random.seed(1234)
+#np.random.seed(1234)
 
 def train_model(xtrain, ytrain, xtest, ytest, args, input_dim):
 
@@ -16,23 +16,32 @@ def train_model(xtrain, ytrain, xtest, ytest, args, input_dim):
 	model = Sequential()
 
 	W = normal((input_dim, args.nodes)).eval()
-	coeff = np.polynomial.polynomial.polyfit(np.arange(input_dim) + 1.0, W, deg=args.deg)
-	if args.mode == 'normal':
-		print 'Using dense layer with {} nodes'.format(args.nodes)
-		model.add(Dense(args.nodes, input_dim=input_dim, bias=False, weights=[W]))
-	else:
-		print 'Using polydense layer with {} nodes and degree {}'.format(args.nodes, args.deg)
-		model.add(PolyDense(args.nodes, deg = args.deg, input_dim=input_dim, weights = [coeff]))
+	for i in range(args.hlayers):
+		if args.mode == 'normal':
+			#print 'Using dense layer with {} nodes'.format(args.nodes)
+			model.add(Dense(args.nodes, input_dim=input_dim, bias=False, weights=[W]))
+		else:
+			#print 'Using polydense layer with {} nodes and degree {}'.format(args.nodes, args.deg)
+			coeff = np.polynomial.polynomial.polyfit(np.arange(input_dim) + 1.0, W, deg=args.deg)
+			model.add(PolyDense(args.nodes, deg = args.deg, input_dim=input_dim, weights = [coeff]))
+		input_dim = args.nodes
+		W = normal((input_dim, args.nodes)).eval()
 
-	model.add(Activation('relu'))
+	model.add(Activation(args.activ))
 	model.add(Dense(1))
 
 	model.compile(loss='mean_squared_error',optimizer='adadelta')
 
 	earlystopping = EarlyStopping(monitor = 'val_loss', patience=20, mode = 'min', verbose = 0)
 	model.fit(xtrain, ytrain, batch_size=batch_size, nb_epoch=nb_epoch, callbacks=[earlystopping], verbose=1, validation_data=(xtest, ytest))
+	score = model.evaluate(xtrain, ytrain, verbose=0)
+	print('Training score : ', score)
+	with open("trainscoreUCI.txt","a") as f:
+		f.write(str(score)+"\n")
 	score = model.evaluate(xtest, ytest, verbose=0)
-	print('Test score:', score)
+	print('Testing score : ', score)
+	with open("valscoreUCI.txt","a") as f:
+		f.write(str(score)+"\n")
 	
 
 parser = argparse.ArgumentParser()
@@ -40,6 +49,8 @@ parser.add_argument("--mode", default= 'normal', help="use dense or polydense")
 parser.add_argument("--deg", default= 10, help="Input polynomial degree", type=int)
 parser.add_argument("--nodes", default= 10, help="Input polynomial degree", type=int)
 parser.add_argument("--epoch",default=500, help="Number of epochs", type=int) 
+parser.add_argument("--hlayers",default=1, help="Number of hidden layers", type=int) 
+parser.add_argument("--activ",default="sigmoid", help="Number of hidden layers") 
 parser.add_argument("f",default=1, help="Function to be trained", type=int) 
 args = parser.parse_args(sys.argv[1:])
 
@@ -51,5 +62,5 @@ f = args.f
 xtrain, ytrain = data['x'][:train_split[f]], data['y'][:train_split[f]]
 xtest, ytest = data['x'][train_split[f]:], data['y'][train_split[f]:]
 
-print xtrain.shape, xtest.shape
+print(args)
 train_model(xtrain, ytrain, xtest, ytest, args, xtrain.shape[1])
