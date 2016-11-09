@@ -69,8 +69,8 @@ model.add(Activation('relu'))
 model.add(Dense(nb_classes)) 
 model.add(Activation('softmax'))
 
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy',optimizer=sgd,metrics=['accuracy'])
+#sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',optimizer='adadelta',metrics=['accuracy'])
 
 model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=nb_epoch,
           verbose=1, validation_data=(X_test, Y_test))
