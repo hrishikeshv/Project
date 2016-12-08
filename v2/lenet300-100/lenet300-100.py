@@ -88,7 +88,6 @@ for i in range(2):
 						batch_size=batch_size, nb_epoch=args.epoch, callbacks=[earlystopping],
 						verbose=1, validation_data=(X_test, Y_test))
 	score = model.evaluate(X_test, Y_test, verbose=0)
-	model.save_weights('temp.h5')
 
 with open('testscoreLenet300-100.txt','a') as f:
 	f.write(str(score[0]) + ' ' + str(score[1])+'\n')
