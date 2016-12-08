@@ -19,6 +19,7 @@ from keras.optimizers import SGD
 from keras.utils import np_utils
 from keras.callbacks import EarlyStopping
 from keras.initializations import normal
+from keras.regularizers import l2
 
 batch_size = 512 
 nb_classes = 10
@@ -58,6 +59,7 @@ parser.add_argument("--deg1", default= 10, help="use dense or polydense", type=i
 parser.add_argument("--deg2", default= 10, help="Input polynomial degree", type=int)
 parser.add_argument("--epoch",default= 100, help="Number of epochs", type=int) 
 parser.add_argument("--activ",default= "sigmoid", help="Number of hidden layers") 
+parser.add_argument("--reg", help="Regularization weight") 
 args = parser.parse_args(sys.argv[1:])
 model = Sequential()
 
@@ -71,6 +73,9 @@ model.add(MaxPooling2D(pool_size=(nb_pool, nb_pool),strides=(2,2)))
 model.add(Flatten())
 
 W = normal((model.output_shape[-1], 120)).eval()
+reg = None
+if args.reg:
+    reg = l2(float(args.reg))
 if args.l1 == 'normal':	
 	model.add(Dense(120, bias=False, weights=[W]))
 else:
@@ -84,7 +89,7 @@ if args.l2 == 'normal':
 	model.add(Dense(84, bias=False, weights=[W]))
 else:
 	coeff = np.polynomial.polynomial.polyfit(np.arange(model.output_shape[-1]) + 1.0, W, deg=args.deg2)
-	model.add(PolyDense(84, deg = args.deg2,weights=[coeff])) 
+	model.add(PolyDense(84, deg = args.deg2,weights=[coeff], W_regularizer = reg)) 
 model.add(Activation(args.activ)) 
 model.add(Dense(nb_classes)) 
 model.add(Activation('softmax'))
@@ -94,9 +99,8 @@ earlystopping = EarlyStopping(monitor = 'val_loss', patience=10, mode = 'min', v
 model.compile(loss='categorical_crossentropy',optimizer='adadelta',metrics=['accuracy'])
 
 model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=args.epoch,callbacks=[earlystopping],
-          verbose=0, validation_data=(X_test, Y_test))
+          verbose=1, validation_data=(X_test, Y_test))
 score = model.evaluate(X_test, Y_test, verbose=0)
-model.summary()
 if args.l2 == "poly":
 	model.save_weights('lenet5comp.h5')
 else:

@@ -76,6 +76,7 @@ for i in range(2):
 
 #model.summary()
 	if i==1:
+		break
 		model.load_weights('temp.h5')
 
 	model.compile(loss='categorical_crossentropy',
