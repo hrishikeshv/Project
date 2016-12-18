@@ -79,7 +79,7 @@ if args.reg:
 if args.l1 == 'normal':	
 	model.add(Dense(120, bias=False, weights=[W]))
 else:
-	coeff = np.polynomial.polynomial.polyfit(np.arange(model.output_shape[-1]) + 1.0, W, deg=args.deg1)
+	coeff = np.polynomial.polynomial.polyfit(np.arange(model.output_shape[-1]) + 1.0, W, deg=args.deg1 + 1)
 	model.add(PolyDense(120, deg = args.deg1,weights=[coeff])) 
 
 model.add(Activation(args.activ)) 
@@ -88,7 +88,7 @@ W = normal((model.output_shape[-1], 84)).eval()
 if args.l2 == 'normal':	
 	model.add(Dense(84, bias=False, weights=[W]))
 else:
-	coeff = np.polynomial.polynomial.polyfit(np.arange(model.output_shape[-1]) + 1.0, W, deg=args.deg2)
+	coeff = np.polynomial.polynomial.polyfit(np.arange(model.output_shape[-1]) + 1.0, W, deg=args.deg2 + 1)
 	model.add(PolyDense(84, deg = args.deg2,weights=[coeff], W_regularizer = reg)) 
 model.add(Activation(args.activ)) 
 model.add(Dense(nb_classes)) 

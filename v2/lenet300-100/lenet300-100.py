@@ -18,6 +18,7 @@ from keras.optimizers import SGD, Adam, RMSprop
 from keras.utils import np_utils
 from keras.callbacks import EarlyStopping
 from keras.initializations import normal
+from keras.regularizers import l2
 
 
 batch_size = 128
@@ -47,6 +48,7 @@ parser.add_argument("--deg1", default= 10, help="use dense or polydense", type=i
 parser.add_argument("--deg2", default= 10, help="Input polynomial degree", type=int)
 parser.add_argument("--epoch",default= 100, help="Number of epochs", type=int) 
 parser.add_argument("--activ",default= "sigmoid", help="Number of hidden layers") 
+parser.add_argument("--reg", help="Regularization weight") 
 args = parser.parse_args(sys.argv[1:])
 
 for i in range(2):
@@ -64,12 +66,16 @@ for i in range(2):
 
 	model.add(Activation(args.activ)) 
 
+	reg = None
+	if args.reg:
+		reg = l2(float(args.reg))
+
 	W = normal((model.output_shape[-1], 100)).eval()
 	if args.l2 == 'normal':
 		model.add(Dense(100, bias=False, weights=[W]))
 	else:
 		coeff = np.polynomial.polynomial.polyfit(np.arange(model.output_shape[-1]) + 1.0, W, deg=args.deg2)
-		model.add(PolyDense(100, deg = args.deg2, weights=[coeff])) 
+		model.add(PolyDense(100, deg = args.deg2, weights=[coeff], W_regularizer=reg)) 
 	model.add(Activation(args.activ)) 
 	model.add(Dense(10))
 	model.add(Activation('softmax'))
@@ -88,6 +94,4 @@ for i in range(2):
 						batch_size=batch_size, nb_epoch=args.epoch, callbacks=[earlystopping],
 						verbose=1, validation_data=(X_test, Y_test))
 	score = model.evaluate(X_test, Y_test, verbose=0)
-
-with open('testscoreLenet300-100.txt','a') as f:
-	f.write(str(score[0]) + ' ' + str(score[1])+'\n')
+	print(score[1])
