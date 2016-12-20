@@ -94,8 +94,11 @@ def evaluate_lenet(args, learning_rate = 0.01, dataset='mnist.pkl.gz', hsize=[10
 
     layer2 = LogisticRegression(input=layer0.output, n_in=hsize[0], n_out=10)
 
-    cost = layer2.negative_log_likelihood(y)
-
+    print(layer0.W)
+    L1 = (abs(T.extra_ops.diff(layer0.W, axis=0)).sum())
+    cost = (layer2.negative_log_likelihood(y))
+# cost = 0.001 * L1
+    print(cost.ndim)
     test_model = theano.function(
         inputs=[index],
         outputs=layer2.errors(y),
@@ -116,7 +119,7 @@ def evaluate_lenet(args, learning_rate = 0.01, dataset='mnist.pkl.gz', hsize=[10
 
     params = layer2.params + layer0.params
 
-    grads = T.grad(cost, params)
+    grads = [T.grad(cost, param) for param in params]
 
 #    updates = adadelta(params, grads)
     updates = [(param_i, param_i - learning_rate * grad_i) for param_i,grad_i in zip(params,grads)]
