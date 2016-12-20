@@ -75,6 +75,7 @@ def evaluate_lenet(args, learning_rate = 0.01, dataset='mnist.pkl.gz', hsize=[10
 
     print('.. building model')
 
+	#### INPUT LAYER ####
     layer0_input = x
     if args.l1 == "normal":
         layer0 = HiddenLayer(
@@ -92,13 +93,12 @@ def evaluate_lenet(args, learning_rate = 0.01, dataset='mnist.pkl.gz', hsize=[10
                 n_deg=args.deg1
         )
 
+	#### OUTPUT LAYER ####
     layer2 = LogisticRegression(input=layer0.output, n_in=hsize[0], n_out=10)
 
-    print(layer0.W)
     L1 = (abs(T.extra_ops.diff(layer0.W, axis=0)).sum())
-    cost = (layer2.negative_log_likelihood(y))
-# cost = 0.001 * L1
-    print(cost.ndim)
+    cost = (layer2.negative_log_likelihood(y) + 0.0001 * L1)
+
     test_model = theano.function(
         inputs=[index],
         outputs=layer2.errors(y),
